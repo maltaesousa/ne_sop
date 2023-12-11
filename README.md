@@ -45,6 +45,13 @@ python .\manage.py runserver
 ```
 Then open [http://127.0.0.1:8000/api/test](http://127.0.0.1:8000/api/test) in your browser, you should see "Congratulations! It works".
 
+## Database
+
+The first time you set up your database, run fixtures with:
+
+```
+python manage.py loaddata entities.json entity-types.json items.json item-types.json item-status.json events.json event-types.json
+```
 
 ## Frontend
 
